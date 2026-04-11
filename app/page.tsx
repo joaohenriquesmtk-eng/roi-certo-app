@@ -32,8 +32,8 @@ export default function ROICerto() {
   const [cidadeDetectada, setCidadeDetectada] = useState("Brasil");
   const [loadingAlerta, setLoadingAlerta] = useState(false);
 
-  // Lógica Dinâmica de Unidades
-  const precisaUreia = cultura === "Milho Safrinha" || cultura === "Algodão";
+  // Lógica Dinâmica de Unidades - CORRIGIDA AQUI: Se não for Soja, exige Ureia
+  const precisaUreia = cultura !== "Soja";
   const unidadeProd = cultura === "Algodão" ? "@/ha" : "sc/ha";
   const unidadePreco = cultura === "Algodão" ? "R$/@" : "R$/sc";
 

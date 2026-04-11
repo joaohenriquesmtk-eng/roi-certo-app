@@ -1,36 +1,20 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📈 ROI Certo - Motor de Viabilidade Agroeconômica
 
-## Getting Started
+**Acesso ao Sistema:** [roi-certo-app.vercel.app](https://roi-certo-app.vercel.app)
 
-First, run the development server:
+## 📌 Visão Executiva
+O **ROI Certo** é uma ferramenta de inteligência financeira criada para blindar o teto produtivo de grandes operações agrícolas. O sistema cruza dados de análise de solo (Fósforo e Potássio) com a cotação em tempo real de fertilizantes macronutricionais e commodities, entregando um diagnóstico preciso sobre o Retorno sobre o Investimento (ROI), o Ponto de Equilíbrio (Break-even) da adubação e insights estratégicos para a safra.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Arquitetura e Funcionalidades
+- **Modelagem Dinâmica de Solo e Nutrição:** O algoritmo distingue a alta capacidade de fixação de P em Latossolos Argilosos da alta lixiviação de K em Neossolos Arenosos. Além disso, possui lógica reativa de Nitrogênio: isenta a Soja (devido à FBN) e exige parâmetros de Ureia automaticamente para culturas de alta demanda (Milho Safrinha, Algodão, Trigo e Sorgo).
+- **Radar de Mercado (Tempo Real):** Integração engenhosa com API de IP (geolocalização silenciosa) e LLM para rastrear a região do usuário e formular recomendações financeiras dinâmicas (travamento de custos, tendências cambiais ou venda antecipada) baseadas na volatilidade do mercado local.
+- **Interface Executiva Reativa:** Renderização condicional construída com foco em UX para gestores e diretores (C-Level), entregando os números exatos sem atritos, além de um modal integrado de portfólio do Arquiteto do Sistema.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Stack Tecnológico
+- **Frontend:** React.js, Next.js (App Router), Tailwind CSS (Light Mode Corporativo).
+- **Backend/API:** Next.js API Routes (Serverless Functions).
+- **Inteligência Artificial:** Google Gemini (LLM treinado com prompt system financeiro/agronômico, com output estrito em matriz JSON).
+- **Deploy & Infraestrutura:** Vercel (Hospedagem em nuvem) e GitHub (Controle de Versão).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Idealizado e arquitetado por **João Henrique da Silva** (Engenheiro Agrônomo).* [Conecte-se no LinkedIn](https://www.linkedin.com/in/joaohenriquedasilva-agronomo/)
